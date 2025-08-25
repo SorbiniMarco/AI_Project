@@ -1,0 +1,9 @@
+pytest
+pytest-cov
+pylint
+torch
+torchvision
+scikit-learn
+matplotlib
+seaborn
+tqdm

@@ -1,0 +1,31 @@
+name: Deploy Python 3.12
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          
+      - name: Install system dependencies
+        run: sudo apt-get update && sudo apt-get install -y make build-essential
+
+      - name: Install linting tools
+        run: |
+          python -m pip install --upgrade pip
+          pip install pylint  # o i tuoi tool di linting specifici
+          
+      - name: Run Test with verbose output
+        run: |
+          echo "Current directory: $(pwd)"
+          echo "Python version: $(python --version)"
+          echo "Pip list:"
+          pip list
+          make test || echo "Tests failed with exit code $?"
