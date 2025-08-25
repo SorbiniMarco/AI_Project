@@ -24,7 +24,7 @@ test_loader = torch.utils.data.DataLoader(test_set, batch_size=1000, shuffle=Fal
 print(f"train_set images available: {len(train_set)}")
 print(f"test_set images available: {len(test_set)}")
 
-# distribution of classes
+# distribution of classes 
 labels = train_set.targets.numpy()
 unique, counts = np.unique(labels, return_counts=True) #Find the unique elements of an array.
 class_dist = dict(zip(unique, counts, strict=True)) #strict: if one of the arguments is exhausted before the others, raise a ValueError.

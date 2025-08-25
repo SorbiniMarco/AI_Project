@@ -1,7 +1,6 @@
 # Created by pytest automatically.
-#cosa deve ignorare: Tutto quello che non vogliamo che vada in source controll
 .pytest_cache/
-venv/
+
 .coverage
 
 *.pyc
@@ -9,6 +8,7 @@ __pycache__/
 *.pyo
 *.pyd
 
+.data/
 data/
 *.pth
 *.pt

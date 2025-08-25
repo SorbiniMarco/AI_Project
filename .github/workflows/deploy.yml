@@ -15,7 +15,8 @@ jobs:
           python-version: "3.12"
           
       - name: Install system dependencies
-        run: sudo apt-get update && sudo apt-get install -y make build-essential
+        run: |
+          sudo apt-get update && sudo apt-get install -y make build-essential
 
       - name: Install linting tools
         run: |
