@@ -21,8 +21,8 @@ train_loader = torch.utils.data.DataLoader(train_set, batch_size=64, shuffle=Tru
 test_loader = torch.utils.data.DataLoader(test_set, batch_size=1000, shuffle=False) #extact data, 1k times, not shuffled
 
 # EDA
-print(f"train_set images available: {len(train_set)}")
-print(f"test_set images available: {len(test_set)}")
+print(f"train_set images available (data size): {len(train_set)}")
+print(f"test_set images available (data size): {len(test_set)}")
 
 # distribution of classes 
 labels = train_set.targets.numpy()
@@ -31,6 +31,13 @@ class_dist = dict(zip(unique, counts, strict=True)) #strict: if one of the argum
 print("Distribution of classes:")
 for unique, count in class_dist.items():
     print(f"{unique}: {count}")
+
+# Plot class distribution
+plt.figure(figsize=(10,4))
+sns.barplot(x=list(class_dist.keys()), y=list(class_dist.values()))
+plt.xlabel("Clothing item")
+plt.ylabel("Count")
+plt.show()
 
 # Show sample images
 examples = enumerate(train_loader)
