@@ -1,4 +1,5 @@
 import time
+import pandas as pd
 import torch # tensor computation, deep neural networks
 import torch.nn as nn #foundation for building and training neural network models
 import torch.optim as optim # optimization algorithms
@@ -33,10 +34,16 @@ for unique, count in class_dist.items():
     print(f"{unique}: {count}")
 
 # Plot class distribution
-plt.figure(figsize=(10,4))
-sns.barplot(x=list(class_dist.keys()), y=list(class_dist.values()))
-plt.xlabel("Clothing item")
-plt.ylabel("Count")
+classes_x_rapr = ["T-shirt/top", "Trouser", "Pullover", "Dress", "Coat", "Sandal", "Shirt", "Sneaker", "Bag", "Ankle boot"]
+df = pd.DataFrame({"class": [classes_x_rapr[i] for i in class_dist.keys()], "count": counts})
+
+plt.subplots(figsize=(8,6))
+sns.barplot(x="count", y="class", data=df, palette=None, color="b")
+
+plt.xlabel("Number of images")
+plt.ylabel("Clothing class")
+plt.title("Classes distribution")
+plt.xlim(0, 7000) # max over 6k to show clearly that every class has 6k items(images) 
 plt.show()
 
 # Show sample images
@@ -55,7 +62,3 @@ for i in range(10):
     plt.axis('off')
 plt.tight_layout()
 plt.show()
-
-#vedere se aggiungere altro a EDA (grafici, rappresentazioni...) e/o iniziare con training/test.
-    #usare libreria time per chiarire tempo di computazione 
-#definire il modello.
