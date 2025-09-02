@@ -15,7 +15,7 @@ jobs:
 
       # Build dell’immagine Docker
       - name: Build Docker image
-        run: docker build -t your-dockerhub-marcosorbini/your-app:latest .
+        run: docker build -t marcosorbini/your-app:latest .
 
       # Login a Docker Hub
       - name: Login to Docker Hub
@@ -26,4 +26,4 @@ jobs:
 
       # Push dell’immagine Docker
       - name: Push Docker image
-        run: docker push your-dockerhub-marcosorbini/your-app:latest
+        run: docker push marcosorbini/your-app:latest
