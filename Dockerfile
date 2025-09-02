@@ -1,7 +1,14 @@
 FROM python:3.11-slim
 
+# Deactivate interactive frontend
+ENV DEBIAN_FRONTEND=noninteractive
+
 # Requirements for torch and other tools
-RUN apt-get update && apt-get install ffmpeg libsm6 libxext6 -y
+RUN apt-get update \
+    && apt-get install ffmpeg libsm6 libxext6 -y \
+    && apt-get update \
+    && apt-get install -y git curl \
+    && rm -rf /var/lib/apt/lists/*
 
 # Set the working directory
 WORKDIR /app
