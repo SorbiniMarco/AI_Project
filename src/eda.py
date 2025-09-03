@@ -64,4 +64,3 @@ def eda():
     plt.tight_layout()
     plt.show()
     plt.savefig("sample_images.png")
-    
