@@ -11,7 +11,7 @@ Neural network model used: SimpleCNN\
 EDA:\
     the EDA rappresents the basics data, such as classes distribution and sample images.
     the plot confusion matrix (for the guesses) is in the train_FashionMNSIT.py if needed
-    ![classes distribuiton](image-1.png)
+    ![classes distribuiton](ClassesDistribution.jpg)
     ![sample imgaes](image-2.png)
 
 tests/:\
