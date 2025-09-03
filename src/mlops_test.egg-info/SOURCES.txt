@@ -1,0 +1,12 @@
+pyproject.toml
+src/__init__.py
+src/eda.py
+src/optuna_search.py
+src/train_FashionMNIST.py
+src/mlops_test.egg-info/PKG-INFO
+src/mlops_test.egg-info/SOURCES.txt
+src/mlops_test.egg-info/dependency_links.txt
+src/mlops_test.egg-info/requires.txt
+src/mlops_test.egg-info/top_level.txt
+tests/test_eda.py
+tests/test_train.py

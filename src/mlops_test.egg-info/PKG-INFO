@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: mlops-test
+Version: 0.1.0
+Summary: A short description of your mlops project
+Author-email: Marco Sorbini <sorbinimarco63@gmail.com>
+License: MIT
+Requires-Python: <3.14,>=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: pytest<9.0.0,>=8.4.1
+Requires-Dist: pytest-cov<7.0.0,>=6.2.1
+Requires-Dist: pylint<4.0.0,>=3.3.8
+Requires-Dist: torch<3.0.0,>=2.8.0
+Requires-Dist: torchvision<0.24.0,>=0.23.0
+Requires-Dist: scikit-learn<2.0.0,>=1.7.1
+Requires-Dist: matplotlib<4.0.0,>=3.10.6
+Requires-Dist: seaborn<0.14.0,>=0.13.2
+Requires-Dist: tqdm<5.0.0,>=4.67.1

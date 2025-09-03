@@ -1,0 +1,9 @@
+pytest<9.0.0,>=8.4.1
+pytest-cov<7.0.0,>=6.2.1
+pylint<4.0.0,>=3.3.8
+torch<3.0.0,>=2.8.0
+torchvision<0.24.0,>=0.23.0
+scikit-learn<2.0.0,>=1.7.1
+matplotlib<4.0.0,>=3.10.6
+seaborn<0.14.0,>=0.13.2
+tqdm<5.0.0,>=4.67.1
