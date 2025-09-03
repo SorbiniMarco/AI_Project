@@ -14,10 +14,6 @@ EDA:\
     ![classes distribuiton](image-1.png)
     ![sample imgaes](image-2.png)
 
-
-    <img width="800" height="600" alt="Figure_1" src="https://github.com/user-attachments/assets/35012fee-8afc-4f01-bf40-d1a49a4d1965" />
-
-
 tests/:\
     Folder containing the files needed to verify that everything works without errors.
 
