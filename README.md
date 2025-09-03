@@ -19,9 +19,9 @@ requiremenst:\
     Required libraries to work on this project.
 
 Docker:\
-    Published the repository
+    Published the repository on DockerHub
 
-Accuracy:\
+Accuracy:
 
 Epoch [1/5], Loss: 0.4896\
 Epoch [2/5], Loss: 0.3159\
