@@ -47,6 +47,6 @@ Classification Report\
            8       0.97      1.00      0.98      6000
            9       0.99      0.97      0.98      6000
 
-    accuracy                           0.92     60000\
+    accuracy                           0.92     60000
    macro avg       0.93      0.92      0.92     60000\
 weighted avg       0.93      0.92      0.92     60000
