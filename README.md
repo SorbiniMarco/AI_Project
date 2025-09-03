@@ -11,6 +11,8 @@ Neural network model used: SimpleCNN\
 EDA:\
     the EDA rappresents the basics data, such as classes distribution and sample images.
     the plot confusion matrix (for the guesses) is in the train_FashionMNSIT.py if needed
+    ![classes distribuiton](image-1.png)
+    ![sample imgaes](image-2.png)
 
 tests/:\
     Folder containing the files needed to verify that everything works without errors.
@@ -50,3 +52,5 @@ Classification Report\
     accuracy                           0.92     60000
    macro avg       0.93      0.92      0.92     60000\
 weighted avg       0.93      0.92      0.92     60000
+
+![confusion matrix](image.png)
