@@ -34,3 +34,7 @@ def test_FashionMNIST_evaluation():
     train_FashionMNIST(1, save_path=test_model_path) #train the model
     evaluate_FashionMNIST(test_model_path) #evaluate the model just trained
     os.remove(test_model_path)
+    
+if __name__ == "__main__":
+    test_FashionMNIST_training()
+    test_FashionMNIST_evaluation()

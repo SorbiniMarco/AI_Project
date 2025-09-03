@@ -64,3 +64,6 @@ def eda():
     plt.tight_layout()
     plt.show()
     plt.savefig("sample_images.png")
+    
+if __name__ == "__main__":
+    eda()
